@@ -6,90 +6,89 @@
         box-sizing: border-box;
     }
 
-    body {
-        font-size: 80%;
-        font-color: white;
-        background: white;
-        color: white;
-        padding-top: 200px;
-    }
+body {
+    font-size: 80%;
+    font-color: white;
+    background: white;
+    color: white;
+}
 
-    header {
-        position: fixed;
-        bottom: 0;
-        left:1em;
-        right:0;
-        z-index: 100;
-        margin-top: 1em;
-    }
+header {
+    bottom: 0;
+    left:1em;
+    right:0;
+    z-index: 100;
+    margin-top: 1em;
+    padding-bottom: 100px;
+}
 
-    header ul {
-        background: darkred;
-        display: none;
-        list-style: none;
-        margin: 0;
-        padding: 0 0 60px 0;
-        border-top:1px solid darkred;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+header ul {
+    background: darkred;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 60px 0;
+    border-top:1px solid darkred;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
-    header ul li {
-        border-bottom: 1px solid pink;
-        margin-top: 3em;
-    }
+header ul li {
+    border-bottom: 1px solid pink;
+    margin-top: 3em;
+}
 
-    header ul li a {
-        display: block;
-        color: black;
-        padding: 5px;
-        text-decoration: none;
-        transition: all 500ms;
-    }
+header ul li a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 500ms;
+}
 
-    header ul li a:hover {
-        background: lightgrey;
-        color: darkred;
-        text-decoration: none;
-    }
+header ul li a:hover {
+    background: lightgrey;
+    color: darkred;
+    text-decoration: none;
+}
 
-    header button.toggle {
-        background: darkred;
-        border: 1px darkred;
-        border-radius: 2px;
-        box-shadow: 0 3px 3px rgba(0,0,0,.2);
-        display: block;
-        height: 50px;
-        margin: 5px;
-        padding: 5px;
-        width: 50px;
-        border-radius: 50%;
-        /**/
-        position: relative;
-        z-index: 200;
-    }
+header button.toggle {
+    background: darkred;
+    border: 1px darkred;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.2);
+    display: block;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 50%;
+    /**/
+    position: relative;
+    z-index: 200;
+}
 
-    header button.toggle:focus,
-    header button.toggle:active {
-      outline: 0;
-    }
-    header button.toggle span {
-        background: lightgrey;
-        border-radius: 3px;
-        display: block;
-        height: 4px;
-        margin: 3px;
-    }
+header button.toggle:focus,
+header button.toggle:active {
+  outline: 0;
+}
+header button.toggle span {
+    background: lightgrey;
+    border-radius: 3px;
+    display: block;
+    height: 4px;
+    margin: 3px;
+}
 
-    header button.toggle:active {
-        background: lightgrey;
-        box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
-    }
+header button.toggle:active {
+    background: lightgrey;
+    box-shadow: inset 0 3px 3px rgba(0,0,0,.2);
+}
 
-    header button.toggle:active span {
-        background: white;
-    }
+header button.toggle:active span {
+    background: white;
+}
 
     @media (min-width: 768px) {
         header {
@@ -124,20 +123,14 @@
         header nav ul li a {
             padding: 15px;
         }
-
+  }
 * {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-<div class="loader"></div>
 
-div {
-    width: 35px;
-    height: 4px;
-    background-color: black;
-    margin: 6px 0;
-}
+
 
 
 html {
@@ -157,6 +150,12 @@ html {
 .module img {
   width: 100%;
 }
+
+.image-wrapper {
+  position: relative; 
+}
+
+
 body {
   background: white;
   color: black;
@@ -198,10 +197,13 @@ h4 {
     font-color: white;
     position: absolute;
     top: 30%;
-
-
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
-
+.project a {
+  color: white;
+}
 
 .project-page {
   position: fixed;
